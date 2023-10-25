@@ -19,7 +19,7 @@ const FormVagas = ({ aoPesquisar }: Props) => {
       <input
         className={styles.campo}
         placeholder="Front-end, fullstack, node, design"
-        onChange={(e) => setTermo(e.target.value)}
+        onChange={(e: { target: { value: any } }) => setTermo(e.target.value)}
         type="search"
       />
       <button className={styles.btnPesquisar} type="submit">
